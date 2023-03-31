@@ -52,10 +52,7 @@ namespace Sistemas_Reservas
 
                 }
             }
-            else
-            {
-                picPerfil.Image = Sistemas_Reservas.Properties.Resources.usuario;
-            }
+         
 
 
             txtUsuario.Text = cache_usuario.usuario;

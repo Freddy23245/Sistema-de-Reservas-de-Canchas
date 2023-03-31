@@ -2374,11 +2374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Sistemas Reservas\\Sistemas Reservas\\Sistemas Reservas.csproj",
+      "projectUniqueName": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Reservas de Canchas\\Sistemas Reservas\\Sistemas Reservas\\Sistemas Reservas.csproj",
       "projectName": "Sistemas Reservas",
-      "projectPath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Sistemas Reservas\\Sistemas Reservas\\Sistemas Reservas.csproj",
+      "projectPath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Reservas de Canchas\\Sistemas Reservas\\Sistemas Reservas\\Sistemas Reservas.csproj",
       "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Sistemas Reservas\\Sistemas Reservas\\obj\\",
+      "outputPath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Reservas de Canchas\\Sistemas Reservas\\Sistemas Reservas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2395,11 +2395,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Cristian\\Desktop\\Proyectos\\Sistemas Reservas\\Negocio\\Negocio.csproj": {
-              "projectPath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Sistemas Reservas\\Negocio\\Negocio.csproj"
+            "C:\\Users\\Cristian\\Desktop\\Proyectos\\Reservas de Canchas\\Sistemas Reservas\\Negocio\\Negocio.csproj": {
+              "projectPath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Reservas de Canchas\\Sistemas Reservas\\Negocio\\Negocio.csproj"
             },
-            "C:\\Users\\Cristian\\Desktop\\Proyectos\\Sistemas Reservas\\Soporte\\Soporte.csproj": {
-              "projectPath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Sistemas Reservas\\Soporte\\Soporte.csproj"
+            "C:\\Users\\Cristian\\Desktop\\Proyectos\\Reservas de Canchas\\Sistemas Reservas\\Soporte\\Soporte.csproj": {
+              "projectPath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Reservas de Canchas\\Sistemas Reservas\\Soporte\\Soporte.csproj"
             }
           }
         }

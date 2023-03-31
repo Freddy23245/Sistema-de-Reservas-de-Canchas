@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hmIniXzjt9N/2iWA/3oU2U7xRHDykLR4O8Cfdb68GOqiAhJIzKngeQpbcYkwRjxV8gaWI4q3HK3nBHviW3fhDw==",
+  "dgSpecHash": "3QHcT4hCPp3LHyrrofZXDMxUtEchOGD1mnqSdTaGXAmiBQP/ha9pqb2DER1vidQvfIMombzEtY6lVLUhHQKvmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Sistemas Reservas\\Sistemas Reservas\\Sistemas Reservas.csproj",
+  "projectFilePath": "C:\\Users\\Cristian\\Desktop\\Proyectos\\Reservas de Canchas\\Sistemas Reservas\\Sistemas Reservas\\Sistemas Reservas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cristian\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Cristian\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
