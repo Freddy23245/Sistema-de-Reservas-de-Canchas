@@ -1,6 +1,0 @@
-C:\Users\Cristian\Desktop\Proyectos C#\Sistemas Reservas\Soporte\bin\Debug\Soporte.dll
-C:\Users\Cristian\Desktop\Proyectos C#\Sistemas Reservas\Soporte\bin\Debug\Soporte.pdb
-C:\Users\Cristian\Desktop\Proyectos C#\Sistemas Reservas\Soporte\obj\Debug\Soporte.csproj.AssemblyReference.cache
-C:\Users\Cristian\Desktop\Proyectos C#\Sistemas Reservas\Soporte\obj\Debug\Soporte.csproj.CoreCompileInputs.cache
-C:\Users\Cristian\Desktop\Proyectos C#\Sistemas Reservas\Soporte\obj\Debug\Soporte.dll
-C:\Users\Cristian\Desktop\Proyectos C#\Sistemas Reservas\Soporte\obj\Debug\Soporte.pdb
