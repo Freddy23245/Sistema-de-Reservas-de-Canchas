@@ -42,9 +42,14 @@ namespace Sistemas_Reservas
         }
         private void MostrarCanchas()
         {
-            cboCanchas.Items.Add("Seleccione La Cancha");
             DataTable dtCancha = new DataTable();
+           
+           
             dtCancha = Reserv.MostrarCanchas();
+            DataRow nuevaFila = dtCancha.NewRow();
+            nuevaFila["Id_Cancha"] = 0;
+            nuevaFila["Numero"] = "Seleccionar";
+            dtCancha.Rows.InsertAt(nuevaFila, 0);
             cboCanchas.DataSource = dtCancha;
             cboCanchas.DisplayMember = "Numero";
             cboCanchas.ValueMember = "Id_Cancha";
@@ -69,10 +74,11 @@ namespace Sistemas_Reservas
         }
         private void Limpiar()
         {
-            cboCanchas.SelectedIndex = 0;
-            cboClientes.SelectedIndex = 0;
-            cboHorarios.SelectedIndex = 0;
+            //cboCanchas.SelectedIndex = 0;
+            //cboClientes.SelectedIndex = 0;
+            //cboHorarios.SelectedIndex = 0;
             txtAnticipo.Text = "0.00";
+            lblTotalAPAgar.Text = "";
         }
         private void CargarDatatable()
         {
@@ -170,7 +176,10 @@ namespace Sistemas_Reservas
             DateTime select = mcFechas.SelectionStart;
             lblFecha.Text = select.ToString("dd/MM/yyyy");
             LimpiarList();
-            Mostrar(Convert.ToDateTime(lblFecha.Text), cboCanchas.Text);
+            if(cboCanchas.Text != "Seleccionar")
+                Mostrar(Convert.ToDateTime(lblFecha.Text), cboCanchas.Text);
+            else
+                MensajeError("Seleccione una cancha");
 
         }
 
@@ -223,6 +232,8 @@ namespace Sistemas_Reservas
             total = reserv.TotalAPAgar(Convert.ToInt32(lblId_Reserva.Text), numeroCancha, Convert.ToDateTime(lblFecha.Text));
             lblTotalAPAgar.Text = " $ " + total.ToString();
             chkConcluido.Enabled = true;
+            total = 0;
+            
 
         }
 

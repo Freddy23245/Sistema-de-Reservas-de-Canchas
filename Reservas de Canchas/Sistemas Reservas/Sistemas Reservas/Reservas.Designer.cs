@@ -68,7 +68,8 @@
             mcFechas.BackColor = Color.FromArgb(45, 66, 91);
             mcFechas.CalendarDimensions = new Size(3, 1);
             mcFechas.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            mcFechas.Location = new Point(-11, 179);
+            mcFechas.Location = new Point(-16, 298);
+            mcFechas.Margin = new Padding(13, 15, 13, 15);
             mcFechas.Name = "mcFechas";
             mcFechas.TabIndex = 0;
             mcFechas.DateChanged += mcFechas_DateChanged;
@@ -78,18 +79,20 @@
             // 
             cboClientes.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             cboClientes.FormattingEnabled = true;
-            cboClientes.Location = new Point(87, 12);
+            cboClientes.Location = new Point(124, 20);
+            cboClientes.Margin = new Padding(4, 5, 4, 5);
             cboClientes.Name = "cboClientes";
-            cboClientes.Size = new Size(159, 27);
+            cboClientes.Size = new Size(225, 37);
             cboClientes.TabIndex = 1;
             // 
             // cboCanchas
             // 
             cboCanchas.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             cboCanchas.FormattingEnabled = true;
-            cboCanchas.Location = new Point(87, 77);
+            cboCanchas.Location = new Point(124, 128);
+            cboCanchas.Margin = new Padding(4, 5, 4, 5);
             cboCanchas.Name = "cboCanchas";
-            cboCanchas.Size = new Size(159, 27);
+            cboCanchas.Size = new Size(225, 37);
             cboCanchas.TabIndex = 2;
             cboCanchas.SelectedIndexChanged += cboCanchas_SelectedIndexChanged;
             // 
@@ -97,9 +100,10 @@
             // 
             cboHorarios.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             cboHorarios.FormattingEnabled = true;
-            cboHorarios.Location = new Point(87, 45);
+            cboHorarios.Location = new Point(124, 75);
+            cboHorarios.Margin = new Padding(4, 5, 4, 5);
             cboHorarios.Name = "cboHorarios";
-            cboHorarios.Size = new Size(159, 27);
+            cboHorarios.Size = new Size(225, 37);
             cboHorarios.TabIndex = 3;
             // 
             // lblCliente
@@ -107,9 +111,10 @@
             lblCliente.AutoSize = true;
             lblCliente.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.White;
-            lblCliente.Location = new Point(20, 15);
+            lblCliente.Location = new Point(29, 25);
+            lblCliente.Margin = new Padding(4, 0, 4, 0);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(65, 21);
+            lblCliente.Size = new Size(99, 32);
             lblCliente.TabIndex = 4;
             lblCliente.Text = "Cliente:";
             // 
@@ -118,9 +123,10 @@
             lblCanchas.AutoSize = true;
             lblCanchas.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCanchas.ForeColor = Color.White;
-            lblCanchas.Location = new Point(10, 81);
+            lblCanchas.Location = new Point(14, 135);
+            lblCanchas.Margin = new Padding(4, 0, 4, 0);
             lblCanchas.Name = "lblCanchas";
-            lblCanchas.Size = new Size(74, 21);
+            lblCanchas.Size = new Size(112, 32);
             lblCanchas.TabIndex = 5;
             lblCanchas.Text = "Canchas:";
             // 
@@ -129,9 +135,10 @@
             lblHorarios.AutoSize = true;
             lblHorarios.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblHorarios.ForeColor = Color.White;
-            lblHorarios.Location = new Point(7, 48);
+            lblHorarios.Location = new Point(10, 80);
+            lblHorarios.Margin = new Padding(4, 0, 4, 0);
             lblHorarios.Name = "lblHorarios";
-            lblHorarios.Size = new Size(78, 21);
+            lblHorarios.Size = new Size(118, 32);
             lblHorarios.TabIndex = 6;
             lblHorarios.Text = "Horarios:";
             // 
@@ -141,10 +148,11 @@
             ListHorarios.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             ListHorarios.ForeColor = Color.White;
             ListHorarios.FormattingEnabled = true;
-            ListHorarios.ItemHeight = 30;
-            ListHorarios.Location = new Point(778, 179);
+            ListHorarios.ItemHeight = 45;
+            ListHorarios.Location = new Point(1111, 298);
+            ListHorarios.Margin = new Padding(4, 5, 4, 5);
             ListHorarios.Name = "ListHorarios";
-            ListHorarios.Size = new Size(237, 304);
+            ListHorarios.Size = new Size(372, 409);
             ListHorarios.TabIndex = 7;
             // 
             // btnAgregar
@@ -155,9 +163,10 @@
             btnAgregar.FlatAppearance.MouseDownBackColor = Color.LimeGreen;
             btnAgregar.FlatStyle = FlatStyle.Flat;
             btnAgregar.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAgregar.Location = new Point(12, 38);
+            btnAgregar.Location = new Point(17, 63);
+            btnAgregar.Margin = new Padding(4, 5, 4, 5);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(101, 38);
+            btnAgregar.Size = new Size(144, 63);
             btnAgregar.TabIndex = 9;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = false;
@@ -171,9 +180,10 @@
             btnEliminar.FlatAppearance.MouseDownBackColor = Color.LimeGreen;
             btnEliminar.FlatStyle = FlatStyle.Flat;
             btnEliminar.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnEliminar.Location = new Point(229, 38);
+            btnEliminar.Location = new Point(327, 63);
+            btnEliminar.Margin = new Padding(4, 5, 4, 5);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(101, 38);
+            btnEliminar.Size = new Size(144, 63);
             btnEliminar.TabIndex = 11;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = false;
@@ -182,9 +192,10 @@
             // lblId_Reserva
             // 
             lblId_Reserva.AutoSize = true;
-            lblId_Reserva.Location = new Point(1110, 591);
+            lblId_Reserva.Location = new Point(1586, 985);
+            lblId_Reserva.Margin = new Padding(4, 0, 4, 0);
             lblId_Reserva.Name = "lblId_Reserva";
-            lblId_Reserva.Size = new Size(75, 15);
+            lblId_Reserva.Size = new Size(114, 25);
             lblId_Reserva.TabIndex = 12;
             lblId_Reserva.Text = "lblId_Reserva";
             lblId_Reserva.Visible = false;
@@ -192,9 +203,10 @@
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(1147, 619);
+            lblFecha.Location = new Point(1639, 1032);
+            lblFecha.Margin = new Padding(4, 0, 4, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(38, 15);
+            lblFecha.Size = new Size(57, 25);
             lblFecha.TabIndex = 13;
             lblFecha.Text = "Fecha";
             lblFecha.Visible = false;
@@ -205,9 +217,11 @@
             gbxAcciones.Controls.Add(btnEliminar);
             gbxAcciones.Controls.Add(btnAgregar);
             gbxAcciones.ForeColor = Color.White;
-            gbxAcciones.Location = new Point(409, 6);
+            gbxAcciones.Location = new Point(584, 10);
+            gbxAcciones.Margin = new Padding(4, 5, 4, 5);
             gbxAcciones.Name = "gbxAcciones";
-            gbxAcciones.Size = new Size(350, 100);
+            gbxAcciones.Padding = new Padding(4, 5, 4, 5);
+            gbxAcciones.Size = new Size(500, 167);
             gbxAcciones.TabIndex = 14;
             gbxAcciones.TabStop = false;
             gbxAcciones.Text = "Acciones";
@@ -220,9 +234,10 @@
             btnEditar.FlatAppearance.MouseDownBackColor = Color.LimeGreen;
             btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnEditar.Location = new Point(122, 38);
+            btnEditar.Location = new Point(174, 63);
+            btnEditar.Margin = new Padding(4, 5, 4, 5);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(101, 38);
+            btnEditar.Size = new Size(144, 63);
             btnEditar.TabIndex = 12;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = false;
@@ -233,9 +248,10 @@
             chkConcluido.AutoSize = true;
             chkConcluido.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             chkConcluido.ForeColor = Color.White;
-            chkConcluido.Location = new Point(509, 124);
+            chkConcluido.Location = new Point(727, 207);
+            chkConcluido.Margin = new Padding(4, 5, 4, 5);
             chkConcluido.Name = "chkConcluido";
-            chkConcluido.Size = new Size(114, 31);
+            chkConcluido.Size = new Size(169, 44);
             chkConcluido.TabIndex = 15;
             chkConcluido.Text = "Concluido";
             chkConcluido.UseVisualStyleBackColor = true;
@@ -245,19 +261,21 @@
             label1.AutoSize = true;
             label1.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(8, 114);
+            label1.Location = new Point(11, 190);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(75, 21);
+            label1.Size = new Size(112, 32);
             label1.TabIndex = 16;
             label1.Text = "Anticipo:";
             // 
             // txtAnticipo
             // 
             txtAnticipo.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            txtAnticipo.Location = new Point(87, 110);
+            txtAnticipo.Location = new Point(124, 183);
+            txtAnticipo.Margin = new Padding(4, 5, 4, 5);
             txtAnticipo.MaxLength = 5;
             txtAnticipo.Name = "txtAnticipo";
-            txtAnticipo.Size = new Size(159, 28);
+            txtAnticipo.Size = new Size(225, 39);
             txtAnticipo.TabIndex = 17;
             txtAnticipo.Text = "0.00";
             txtAnticipo.Click += txtAnticipo_Click;
@@ -286,7 +304,8 @@
             dt_reservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dt_reservas.EnableHeadersVisualStyles = false;
             dt_reservas.GridColor = Color.SteelBlue;
-            dt_reservas.Location = new Point(8, 371);
+            dt_reservas.Location = new Point(11, 570);
+            dt_reservas.Margin = new Padding(4, 5, 4, 5);
             dt_reservas.Name = "dt_reservas";
             dt_reservas.ReadOnly = true;
             dt_reservas.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
@@ -298,6 +317,7 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dt_reservas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dt_reservas.RowHeadersWidth = 62;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(45, 66, 91);
             dataGridViewCellStyle3.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = Color.White;
@@ -306,7 +326,7 @@
             dt_reservas.RowsDefaultCellStyle = dataGridViewCellStyle3;
             dt_reservas.RowTemplate.Height = 25;
             dt_reservas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dt_reservas.Size = new Size(754, 229);
+            dt_reservas.Size = new Size(1077, 382);
             dt_reservas.TabIndex = 18;
             dt_reservas.CellContentClick += dt_reservas_CellContentClick;
             // 
@@ -316,11 +336,12 @@
             ListCanchas.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             ListCanchas.ForeColor = Color.White;
             ListCanchas.FormattingEnabled = true;
-            ListCanchas.ItemHeight = 27;
-            ListCanchas.Location = new Point(778, 84);
+            ListCanchas.ItemHeight = 40;
+            ListCanchas.Location = new Point(1111, 87);
+            ListCanchas.Margin = new Padding(4, 5, 4, 5);
             ListCanchas.Name = "ListCanchas";
             ListCanchas.SelectionMode = SelectionMode.None;
-            ListCanchas.Size = new Size(237, 85);
+            ListCanchas.Size = new Size(337, 124);
             ListCanchas.TabIndex = 19;
             // 
             // label2
@@ -328,9 +349,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(775, 45);
+            label2.Location = new Point(1107, 30);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(233, 23);
+            label2.Size = new Size(349, 35);
             label2.TabIndex = 20;
             label2.Text = "Cancha - Capacidad - Precio";
             // 
@@ -339,9 +361,10 @@
             label3.AutoSize = true;
             label3.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(769, 509);
+            label3.Location = new Point(1099, 848);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(165, 30);
+            label3.Size = new Size(251, 45);
             label3.TabIndex = 21;
             label3.Text = "Total A Pagar:";
             // 
@@ -350,9 +373,10 @@
             lblTotalAPAgar.AutoSize = true;
             lblTotalAPAgar.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblTotalAPAgar.ForeColor = Color.White;
-            lblTotalAPAgar.Location = new Point(918, 509);
+            lblTotalAPAgar.Location = new Point(1339, 848);
+            lblTotalAPAgar.Margin = new Padding(4, 0, 4, 0);
             lblTotalAPAgar.Name = "lblTotalAPAgar";
-            lblTotalAPAgar.Size = new Size(28, 30);
+            lblTotalAPAgar.Size = new Size(42, 45);
             lblTotalAPAgar.TabIndex = 22;
             lblTotalAPAgar.Text = "$";
             // 
@@ -361,9 +385,10 @@
             btnCerrar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnCerrar.Cursor = Cursors.Hand;
             btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
-            btnCerrar.Location = new Point(1046, 6);
+            btnCerrar.Location = new Point(1494, 10);
+            btnCerrar.Margin = new Padding(4, 5, 4, 5);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(25, 25);
+            btnCerrar.Size = new Size(36, 42);
             btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
             btnCerrar.TabIndex = 23;
             btnCerrar.TabStop = false;
@@ -375,10 +400,10 @@
             // 
             // Reservas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(45, 66, 70);
-            ClientSize = new Size(1080, 612);
+            ClientSize = new Size(1543, 1020);
             Controls.Add(btnCerrar);
             Controls.Add(lblTotalAPAgar);
             Controls.Add(label3);
@@ -400,6 +425,7 @@
             Controls.Add(cboClientes);
             Controls.Add(mcFechas);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Reservas";
             Text = "Reservas";
             Load += Reservas_Load;

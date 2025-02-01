@@ -52,9 +52,10 @@
             btnIngresar.FlatStyle = FlatStyle.Flat;
             btnIngresar.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnIngresar.ForeColor = Color.White;
-            btnIngresar.Location = new Point(269, 154);
+            btnIngresar.Location = new Point(384, 257);
+            btnIngresar.Margin = new Padding(4, 5, 4, 5);
             btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(364, 51);
+            btnIngresar.Size = new Size(520, 85);
             btnIngresar.TabIndex = 0;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = false;
@@ -64,9 +65,10 @@
             // 
             txt_usuario.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             txt_usuario.ForeColor = Color.Silver;
-            txt_usuario.Location = new Point(274, 48);
+            txt_usuario.Location = new Point(391, 80);
+            txt_usuario.Margin = new Padding(4, 5, 4, 5);
             txt_usuario.Name = "txt_usuario";
-            txt_usuario.Size = new Size(359, 28);
+            txt_usuario.Size = new Size(511, 39);
             txt_usuario.TabIndex = 2;
             txt_usuario.Text = "USUARIO";
             txt_usuario.TextChanged += txt_usuario_TextChanged;
@@ -78,9 +80,10 @@
             // 
             txt_contraseña.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             txt_contraseña.ForeColor = Color.Silver;
-            txt_contraseña.Location = new Point(274, 77);
+            txt_contraseña.Location = new Point(391, 128);
+            txt_contraseña.Margin = new Padding(4, 5, 4, 5);
             txt_contraseña.Name = "txt_contraseña";
-            txt_contraseña.Size = new Size(359, 28);
+            txt_contraseña.Size = new Size(511, 39);
             txt_contraseña.TabIndex = 3;
             txt_contraseña.Text = "CONTRASEÑA";
             txt_contraseña.Enter += txt_contraseña_Enter;
@@ -95,9 +98,10 @@
             picLogin.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             picLogin.BorderSize = 2;
             picLogin.GradientAngle = 50F;
-            picLogin.Location = new Point(45, 31);
+            picLogin.Location = new Point(64, 52);
+            picLogin.Margin = new Padding(4, 5, 4, 5);
             picLogin.Name = "picLogin";
-            picLogin.Size = new Size(129, 129);
+            picLogin.Size = new Size(184, 184);
             picLogin.SizeMode = PictureBoxSizeMode.Zoom;
             picLogin.TabIndex = 6;
             picLogin.TabStop = false;
@@ -108,10 +112,11 @@
             lblErrorMensaje.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblErrorMensaje.ForeColor = Color.White;
             lblErrorMensaje.ImageAlign = ContentAlignment.MiddleRight;
-            lblErrorMensaje.Location = new Point(251, 108);
+            lblErrorMensaje.Location = new Point(391, 172);
+            lblErrorMensaje.Margin = new Padding(4, 0, 4, 0);
             lblErrorMensaje.Name = "lblErrorMensaje";
             lblErrorMensaje.RightToLeft = RightToLeft.No;
-            lblErrorMensaje.Size = new Size(123, 21);
+            lblErrorMensaje.Size = new Size(190, 32);
             lblErrorMensaje.TabIndex = 7;
             lblErrorMensaje.Text = "lblErrorMensaje";
             lblErrorMensaje.Visible = false;
@@ -123,8 +128,9 @@
             pLogin.Controls.Add(picLogin);
             pLogin.Dock = DockStyle.Left;
             pLogin.Location = new Point(0, 0);
+            pLogin.Margin = new Padding(4, 5, 4, 5);
             pLogin.Name = "pLogin";
-            pLogin.Size = new Size(245, 298);
+            pLogin.Size = new Size(365, 497);
             pLogin.TabIndex = 8;
             pLogin.MouseDown += pLogin_MouseDown;
             // 
@@ -133,9 +139,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(7, 191);
+            label1.Location = new Point(10, 318);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(0, 27);
+            label1.Size = new Size(0, 40);
             label1.TabIndex = 9;
             // 
             // btnCerrar
@@ -143,9 +150,10 @@
             btnCerrar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnCerrar.Cursor = Cursors.Hand;
             btnCerrar.Image = (Image)resources.GetObject("btnCerrar.Image");
-            btnCerrar.Location = new Point(645, 12);
+            btnCerrar.Location = new Point(921, 20);
+            btnCerrar.Margin = new Padding(4, 5, 4, 5);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(25, 25);
+            btnCerrar.Size = new Size(36, 42);
             btnCerrar.SizeMode = PictureBoxSizeMode.Zoom;
             btnCerrar.TabIndex = 13;
             btnCerrar.TabStop = false;
@@ -156,9 +164,10 @@
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             linkLabel1.LinkColor = Color.White;
-            linkLabel1.Location = new Point(340, 225);
+            linkLabel1.Location = new Point(486, 375);
+            linkLabel1.Margin = new Padding(4, 0, 4, 0);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(215, 27);
+            linkLabel1.Size = new Size(324, 40);
             linkLabel1.TabIndex = 14;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Recuperar Contraseña";
@@ -166,10 +175,10 @@
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(45, 66, 91);
-            ClientSize = new Size(682, 298);
+            ClientSize = new Size(974, 497);
             Controls.Add(linkLabel1);
             Controls.Add(btnCerrar);
             Controls.Add(pLogin);
@@ -178,6 +187,7 @@
             Controls.Add(txt_usuario);
             Controls.Add(btnIngresar);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
