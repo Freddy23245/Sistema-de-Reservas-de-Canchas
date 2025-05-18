@@ -24,6 +24,7 @@ namespace Sistemas_Reservas
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         NUsuarios usu = new NUsuarios();
+       
         private void PanelBarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
@@ -149,6 +150,7 @@ namespace Sistemas_Reservas
         private void Inicio_Load(object sender, EventArgs e)
         {
             CargarPerfil();
+            
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -167,6 +169,11 @@ namespace Sistemas_Reservas
         private void linkEditarPerfil_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             AbrirFormulario<EditarPerfil>();
+        }
+
+        private void PanelBarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

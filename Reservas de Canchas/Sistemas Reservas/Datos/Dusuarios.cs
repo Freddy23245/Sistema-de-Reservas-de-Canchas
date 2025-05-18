@@ -19,7 +19,6 @@ namespace Datos
                     cmd.CommandText = "FotoPerfil";
                     cmd.CommandType = CommandType.StoredProcedure;
 
-
                     cmd.Parameters.AddWithValue("@id_usuario", id_usuario);
                     SqlDataAdapter dp = new SqlDataAdapter(cmd);
                     DataSet ds = new DataSet("Usuarios");
@@ -37,7 +36,6 @@ namespace Datos
                     {
                         return MisDatos = new byte[0];
                     }
-
 
                     return MisDatos;
 
@@ -74,7 +72,6 @@ namespace Datos
                     {
                         return MisDatos = new byte[0];
                     }
-
 
                     return MisDatos;
 
@@ -172,12 +169,9 @@ namespace Datos
                           " Recuerda Cambiar la contraseña cuando ingreses al sistema",
                           recipientMail: new List<string> { userMail }
                           );
-                        return "Hola, " + userName + "Tu solicitaste la recuperacion de tu contraseña" + Environment.NewLine +
+                        return "Hola, " + userName + " tu constraseña se genero corretamente y se envio a tu email" + Environment.NewLine +
                           "Por favor verifica tu email: " + userMail + Environment.NewLine +
                           "Recuerda Cambiar la contraseña cuando ingreses al sistema";
-
-
-
                     }
                     else
                         return "Por favor Verifica que el usuario o el email sean correctos";

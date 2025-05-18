@@ -71,6 +71,7 @@
             PanelBarraTitulo.Name = "PanelBarraTitulo";
             PanelBarraTitulo.Size = new Size(1857, 63);
             PanelBarraTitulo.TabIndex = 0;
+            PanelBarraTitulo.Paint += PanelBarraTitulo_Paint;
             PanelBarraTitulo.MouseDown += PanelBarraTitulo_MouseDown;
             // 
             // btnMinimizar
@@ -165,7 +166,7 @@
             btnReservas.IconColor = Color.White;
             btnReservas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnReservas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnReservas.Location = new Point(0, 262);
+            btnReservas.Location = new Point(4, 230);
             btnReservas.Margin = new Padding(4, 5, 4, 5);
             btnReservas.Name = "btnReservas";
             btnReservas.Size = new Size(387, 105);
@@ -186,7 +187,7 @@
             btnCanchas.IconColor = Color.White;
             btnCanchas.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnCanchas.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCanchas.Location = new Point(0, 163);
+            btnCanchas.Location = new Point(0, 115);
             btnCanchas.Margin = new Padding(4, 5, 4, 5);
             btnCanchas.Name = "btnCanchas";
             btnCanchas.Size = new Size(387, 105);
@@ -207,7 +208,7 @@
             btnClientes.IconColor = Color.White;
             btnClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnClientes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnClientes.Location = new Point(4, 53);
+            btnClientes.Location = new Point(0, 0);
             btnClientes.Margin = new Padding(4, 5, 4, 5);
             btnClientes.Name = "btnClientes";
             btnClientes.Size = new Size(387, 105);
@@ -228,7 +229,7 @@
             btnReportes.IconColor = Color.White;
             btnReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             btnReportes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnReportes.Location = new Point(11, 377);
+            btnReportes.Location = new Point(4, 345);
             btnReportes.Margin = new Padding(4, 5, 4, 5);
             btnReportes.Name = "btnReportes";
             btnReportes.Size = new Size(387, 105);
@@ -241,7 +242,7 @@
             lblEmailApp.AutoSize = true;
             lblEmailApp.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEmailApp.ForeColor = Color.White;
-            lblEmailApp.Location = new Point(76, 787);
+            lblEmailApp.Location = new Point(67, 720);
             lblEmailApp.Margin = new Padding(4, 0, 4, 0);
             lblEmailApp.Name = "lblEmailApp";
             lblEmailApp.Size = new Size(138, 32);
@@ -253,7 +254,7 @@
             lblUsuarioApp.AutoSize = true;
             lblUsuarioApp.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblUsuarioApp.ForeColor = Color.White;
-            lblUsuarioApp.Location = new Point(116, 737);
+            lblUsuarioApp.Location = new Point(107, 670);
             lblUsuarioApp.Margin = new Padding(4, 0, 4, 0);
             lblUsuarioApp.Name = "lblUsuarioApp";
             lblUsuarioApp.Size = new Size(163, 32);
@@ -265,7 +266,7 @@
             lblNombreApp.AutoSize = true;
             lblNombreApp.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblNombreApp.ForeColor = Color.White;
-            lblNombreApp.Location = new Point(119, 685);
+            lblNombreApp.Location = new Point(110, 618);
             lblNombreApp.Margin = new Padding(4, 0, 4, 0);
             lblNombreApp.Name = "lblNombreApp";
             lblNombreApp.Size = new Size(168, 32);
@@ -277,7 +278,7 @@
             linkEditarPerfil.AutoSize = true;
             linkEditarPerfil.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             linkEditarPerfil.LinkColor = Color.White;
-            linkEditarPerfil.Location = new Point(11, 867);
+            linkEditarPerfil.Location = new Point(2, 800);
             linkEditarPerfil.Margin = new Padding(4, 0, 4, 0);
             linkEditarPerfil.Name = "linkEditarPerfil";
             linkEditarPerfil.Size = new Size(135, 29);
@@ -291,7 +292,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(11, 787);
+            label3.Location = new Point(2, 720);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(81, 32);
@@ -303,7 +304,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(13, 737);
+            label1.Location = new Point(4, 670);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(106, 32);
@@ -315,7 +316,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(13, 685);
+            label2.Location = new Point(4, 618);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(111, 32);
@@ -331,11 +332,11 @@
             picInicio.BorderSize = 2;
             picInicio.GradientAngle = 50F;
             picInicio.Image = (Image)resources.GetObject("picInicio.Image");
-            picInicio.Location = new Point(17, 492);
+            picInicio.Location = new Point(13, 460);
             picInicio.Margin = new Padding(4, 5, 4, 5);
             picInicio.Name = "picInicio";
             picInicio.Size = new Size(141, 141);
-            picInicio.SizeMode = PictureBoxSizeMode.StretchImage;
+            picInicio.SizeMode = PictureBoxSizeMode.Zoom;
             picInicio.TabIndex = 4;
             picInicio.TabStop = false;
             // 
@@ -346,7 +347,7 @@
             btnCerrarSesion.FlatStyle = FlatStyle.Flat;
             btnCerrarSesion.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnCerrarSesion.ForeColor = Color.White;
-            btnCerrarSesion.Location = new Point(4, 942);
+            btnCerrarSesion.Location = new Point(0, 857);
             btnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
             btnCerrarSesion.Name = "btnCerrarSesion";
             btnCerrarSesion.Size = new Size(387, 73);

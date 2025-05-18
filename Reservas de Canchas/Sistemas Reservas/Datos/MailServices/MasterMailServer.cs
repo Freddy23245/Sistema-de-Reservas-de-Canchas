@@ -29,27 +29,69 @@ namespace Datos.MailServices
         }
         public void sendMail(string subject, string body, List<string> recipientMail)
         {
-            var mailMessage = new MailMessage();
-            //try
+            //var mailMessage = new MailMessage();
+            ////try
+            ////{
+            //mailMessage.From = new MailAddress(senderMail);
+            //foreach (string mail in recipientMail)
             //{
-            mailMessage.From = new MailAddress(senderMail);
-            foreach (string mail in recipientMail)
-            {
-                mailMessage.To.Add(mail);
-            }
-            mailMessage.Subject = subject;
-            mailMessage.Body = body;
-            mailMessage.Priority = MailPriority.Normal;
-            smtpClient.Send(mailMessage);//Enviar mensaje
+            //    mailMessage.To.Add(mail);
             //}
-            //catch (Exception ex) { }
-            //finally
-            //{
-            //    mailMessage.Dispose();
-            //    smtpClient.Dispose();
-            //}
+            //mailMessage.Subject = subject;
+            //mailMessage.Body = body;
+            //mailMessage.Priority = MailPriority.Normal;
+            //smtpClient.Send(mailMessage);//Enviar mensaje
+            ////}
+            ////catch (Exception ex) { }
+            ////finally
+            ////{
+            ////    mailMessage.Dispose();
+            ////    smtpClient.Dispose();
+            ////}
+            ///
+            // CONFIGURACIÓN DEL CORREO DEL REMITENTE
+            string senderMail = "morrisongym630@gmail.com";
+            string password = "fvmb iasx friu vymv";
+            string smtpServer = "smtp.gmail.com";
+            int smtpPort = 587; // O 465 según el proveedor
+            bool enableSSL = true;
 
+            var smtpClient = new SmtpClient(smtpServer, smtpPort)
+            {
+                Credentials = new NetworkCredential(senderMail, password),
+                EnableSsl = enableSSL
+            };
+
+            var mailMessage = new MailMessage();
+            try
+            {
+                mailMessage.From = new MailAddress(senderMail);
+
+                foreach (string mail in recipientMail)
+                {
+                    mailMessage.To.Add(mail);
+                }
+
+                mailMessage.Subject = subject;
+                mailMessage.Body = body;
+                mailMessage.IsBodyHtml = true; // Poner en false si es texto plano
+                mailMessage.Priority = MailPriority.Normal;
+
+                smtpClient.Send(mailMessage);
+                //Console.WriteLine("Correo enviado correctamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al enviar el correo: " + ex.Message);
+            }
+            finally
+            {
+                mailMessage.Dispose();
+                smtpClient.Dispose();
+            }
         }
 
     }
-}
+
+    }
+
