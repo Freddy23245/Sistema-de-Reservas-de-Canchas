@@ -152,7 +152,7 @@ namespace Sistemas_Reservas
                 dt_reservas.DataSource = dt;
             else
             {
-                ListHorarios.Items.Add("Horarios Disponibles");
+                ListHorarios.Items.Add("Horarios Disponibles"); 
                 dt_reservas.DataSource = null;
             }
         }
