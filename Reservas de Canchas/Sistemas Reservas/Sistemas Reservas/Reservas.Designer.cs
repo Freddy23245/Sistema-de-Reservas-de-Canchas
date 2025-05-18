@@ -53,10 +53,10 @@
             dt_reservas = new DataGridView();
             ListCanchas = new ListBox();
             label2 = new Label();
-            label3 = new Label();
-            lblTotalAPAgar = new Label();
             btnCerrar = new PictureBox();
             errorReserva = new ErrorProvider(components);
+            lblTotalAPAgar = new Label();
+            label3 = new Label();
             gbxAcciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dt_reservas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnCerrar).BeginInit();
@@ -66,9 +66,8 @@
             // mcFechas
             // 
             mcFechas.BackColor = Color.FromArgb(45, 66, 91);
-            mcFechas.CalendarDimensions = new Size(3, 1);
             mcFechas.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            mcFechas.Location = new Point(-16, 298);
+            mcFechas.Location = new Point(52, 297);
             mcFechas.Margin = new Padding(13, 15, 13, 15);
             mcFechas.Name = "mcFechas";
             mcFechas.TabIndex = 0;
@@ -149,7 +148,7 @@
             ListHorarios.ForeColor = Color.White;
             ListHorarios.FormattingEnabled = true;
             ListHorarios.ItemHeight = 45;
-            ListHorarios.Location = new Point(1111, 298);
+            ListHorarios.Location = new Point(926, 25);
             ListHorarios.Margin = new Padding(4, 5, 4, 5);
             ListHorarios.Name = "ListHorarios";
             ListHorarios.Size = new Size(372, 409);
@@ -217,7 +216,7 @@
             gbxAcciones.Controls.Add(btnEliminar);
             gbxAcciones.Controls.Add(btnAgregar);
             gbxAcciones.ForeColor = Color.White;
-            gbxAcciones.Location = new Point(584, 10);
+            gbxAcciones.Location = new Point(380, 19);
             gbxAcciones.Margin = new Padding(4, 5, 4, 5);
             gbxAcciones.Name = "gbxAcciones";
             gbxAcciones.Padding = new Padding(4, 5, 4, 5);
@@ -248,7 +247,7 @@
             chkConcluido.AutoSize = true;
             chkConcluido.Font = new Font("Comic Sans MS", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             chkConcluido.ForeColor = Color.White;
-            chkConcluido.Location = new Point(727, 207);
+            chkConcluido.Location = new Point(124, 245);
             chkConcluido.Margin = new Padding(4, 5, 4, 5);
             chkConcluido.Name = "chkConcluido";
             chkConcluido.Size = new Size(169, 44);
@@ -326,7 +325,7 @@
             dt_reservas.RowsDefaultCellStyle = dataGridViewCellStyle3;
             dt_reservas.RowTemplate.Height = 25;
             dt_reservas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dt_reservas.Size = new Size(1077, 382);
+            dt_reservas.Size = new Size(1139, 323);
             dt_reservas.TabIndex = 18;
             dt_reservas.CellContentClick += dt_reservas_CellContentClick;
             // 
@@ -337,7 +336,7 @@
             ListCanchas.ForeColor = Color.White;
             ListCanchas.FormattingEnabled = true;
             ListCanchas.ItemHeight = 40;
-            ListCanchas.Location = new Point(1111, 87);
+            ListCanchas.Location = new Point(514, 257);
             ListCanchas.Margin = new Padding(4, 5, 4, 5);
             ListCanchas.Name = "ListCanchas";
             ListCanchas.SelectionMode = SelectionMode.None;
@@ -349,36 +348,12 @@
             label2.AutoSize = true;
             label2.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1107, 30);
+            label2.Location = new Point(510, 200);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(349, 35);
             label2.TabIndex = 20;
             label2.Text = "Cancha - Capacidad - Precio";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(1099, 848);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(251, 45);
-            label3.TabIndex = 21;
-            label3.Text = "Total A Pagar:";
-            // 
-            // lblTotalAPAgar
-            // 
-            lblTotalAPAgar.AutoSize = true;
-            lblTotalAPAgar.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTotalAPAgar.ForeColor = Color.White;
-            lblTotalAPAgar.Location = new Point(1339, 848);
-            lblTotalAPAgar.Margin = new Padding(4, 0, 4, 0);
-            lblTotalAPAgar.Name = "lblTotalAPAgar";
-            lblTotalAPAgar.Size = new Size(42, 45);
-            lblTotalAPAgar.TabIndex = 22;
-            lblTotalAPAgar.Text = "$";
             // 
             // btnCerrar
             // 
@@ -398,15 +373,39 @@
             // 
             errorReserva.ContainerControl = this;
             // 
+            // lblTotalAPAgar
+            // 
+            lblTotalAPAgar.AutoSize = true;
+            lblTotalAPAgar.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTotalAPAgar.ForeColor = Color.White;
+            lblTotalAPAgar.Location = new Point(749, 491);
+            lblTotalAPAgar.Margin = new Padding(4, 0, 4, 0);
+            lblTotalAPAgar.Name = "lblTotalAPAgar";
+            lblTotalAPAgar.Size = new Size(42, 45);
+            lblTotalAPAgar.TabIndex = 25;
+            lblTotalAPAgar.Text = "$";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Comic Sans MS", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(510, 491);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(251, 45);
+            label3.TabIndex = 24;
+            label3.Text = "Total A Pagar:";
+            // 
             // Reservas
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(45, 66, 70);
             ClientSize = new Size(1543, 1020);
-            Controls.Add(btnCerrar);
             Controls.Add(lblTotalAPAgar);
             Controls.Add(label3);
+            Controls.Add(btnCerrar);
             Controls.Add(label2);
             Controls.Add(ListCanchas);
             Controls.Add(dt_reservas);
@@ -459,9 +458,9 @@
         private DataGridView dt_reservas;
         private ListBox ListCanchas;
         private Label label2;
-        private Label label3;
-        private Label lblTotalAPAgar;
         private PictureBox btnCerrar;
         private ErrorProvider errorReserva;
+        private Label lblTotalAPAgar;
+        private Label label3;
     }
 }

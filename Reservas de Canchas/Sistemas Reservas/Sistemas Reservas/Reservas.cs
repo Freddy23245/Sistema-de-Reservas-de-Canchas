@@ -148,7 +148,13 @@ namespace Sistemas_Reservas
 
             }
             #endregion
-            dt_reservas.DataSource = dt;
+            if(dt.Rows.Count > 0)
+                dt_reservas.DataSource = dt;
+            else
+            {
+                ListHorarios.Items.Add("Horarios Disponibles");
+                dt_reservas.DataSource = null;
+            }
         }
         private void LimpiarList()
         {

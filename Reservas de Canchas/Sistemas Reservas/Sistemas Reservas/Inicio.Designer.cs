@@ -150,7 +150,7 @@
             PanelMenu.Location = new Point(0, 63);
             PanelMenu.Margin = new Padding(4, 5, 4, 5);
             PanelMenu.Name = "PanelMenu";
-            PanelMenu.Size = new Size(396, 668);
+            PanelMenu.Size = new Size(423, 1020);
             PanelMenu.TabIndex = 1;
             // 
             // btnReservas
@@ -359,10 +359,10 @@
             // 
             PanelContenedor.BackColor = Color.FromArgb(49, 66, 82);
             PanelContenedor.Dock = DockStyle.Fill;
-            PanelContenedor.Location = new Point(396, 63);
+            PanelContenedor.Location = new Point(423, 63);
             PanelContenedor.Margin = new Padding(4, 5, 4, 5);
             PanelContenedor.Name = "PanelContenedor";
-            PanelContenedor.Size = new Size(1461, 668);
+            PanelContenedor.Size = new Size(1434, 1020);
             PanelContenedor.TabIndex = 2;
             PanelContenedor.Paint += PanelContenedor_Paint;
             // 
